@@ -1,0 +1,5 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<a href="@(Url.GenerateUrl(new ProductSearchCriteriaRouteData{CategoryId = 1, ManufactureId = 2, Keywords = "aklsdfj", Colours = new List<int>{1, 2, 3}}))">Product Search</a>
