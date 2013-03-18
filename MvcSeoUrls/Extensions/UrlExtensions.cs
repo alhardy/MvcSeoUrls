@@ -12,7 +12,7 @@ namespace MvcSeoUrls.Extensions
     {
         public static string GenerateUrl(this UrlHelper helper, ProductSearchCriteriaRouteData searchCriteriaRouteData)
         {
-            return helper.RouteUrl(searchCriteriaRouteData.ToRouteData());           
+            return helper.RouteUrl("Products_Search", searchCriteriaRouteData.ToRouteData());           
         }
 
         public static string GenerateUrl(this UrlHelper helper, RouteValueDictionary rd)

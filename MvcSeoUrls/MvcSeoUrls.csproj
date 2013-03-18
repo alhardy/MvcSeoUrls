@@ -180,13 +180,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionFilters\SeoRedirectProductSeachAttribute.cs" />
+    <Compile Include="ActionFilters\SeoRedirectActionFilterAttribute.cs" />
     <Compile Include="App_Start\AttributeRoutingConfig.cs" />
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Attributes\MatchRouteDataValue.cs" />
     <Compile Include="Attributes\RouteAliasAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -194,7 +195,7 @@
     <Compile Include="Core\ProductCategory.cs" />
     <Compile Include="Core\ProductManufacturer.cs" />
     <Compile Include="Core\ProductSearchCriteriaRouteData.cs" />
-    <Compile Include="Core\RouteValueExtensions.cs" />
+    <Compile Include="Extensions\RouteValueExtensions.cs" />
     <Compile Include="Extensions\ReflectionExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\UrlExtensions.cs" />
