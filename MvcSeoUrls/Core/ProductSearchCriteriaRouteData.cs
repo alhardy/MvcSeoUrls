@@ -24,12 +24,14 @@ namespace MvcSeoUrls.Core
         [RouteAlias("k")]
         public string Keywords { get; set; }
         [RouteAlias("cr")]
-        public List<int> Colours { get; set; }        
+        public List<int> Colours { get; set; }
 
+        [MatchRouteDataValue]
         public string Manufacturer
         {
             get { return _manufacturers.Where(x => x.Id == ManufactureId).Select(x => x.Name).FirstOrDefault(); }
         }
+        [MatchRouteDataValue]
         public string Category
         {
             get { return _categories.Where(x => x.Id == CategoryId).Select(x => x.Name).FirstOrDefault(); }
